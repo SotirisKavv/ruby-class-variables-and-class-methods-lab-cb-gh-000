@@ -58,7 +58,7 @@ class Song
     ret = {}
     self.artists.each do |artist1|
       sum = 0
-      @@genres.each do |artist2|
+      @@artists.each do |artist2|
         if artist1 == artist2
           sum += 1
         end
