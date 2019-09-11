@@ -40,7 +40,7 @@ class Song
     ret
   end
 
-  def genre_count
+  def self.genre_count
     ret = {}
     self.genres.each do |genre1|
       sum = 0
