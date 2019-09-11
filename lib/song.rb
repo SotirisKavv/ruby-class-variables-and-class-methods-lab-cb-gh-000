@@ -21,7 +21,12 @@ class Song
   end
 
   def self.artists
-    @@artists
+    ret = []
+    @@artists.each do |artist|
+      if !ret.include?(artist)
+        ret << artist
+      end
+    end
   end
 
   def self.genres
