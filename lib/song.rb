@@ -54,4 +54,17 @@ class Song
     ret
   end
 
+  def self.artist_count
+    ret = {}
+    self.artists.each do |artist1|
+      sum = 0
+      @@genres.each do |artist2|
+        if artist1 == artist2
+          sum += 1
+        end
+      end
+      ret[artist1] = sum
+    end
+    ret
+  end
 end
